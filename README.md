@@ -1,2 +1,3 @@
 # geoservice
-python link nodejs hbase hadoop
+python link the nodejs, hbase and hadoop
+
