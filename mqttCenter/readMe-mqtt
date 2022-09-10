@@ -1,0 +1,5 @@
+usage mqtt interact:
+  topic chg need update three files:
+	1) ftpJSserver.js		~> pub: /GeoXpert/uname_xxx/jobBegin
+	2) listenJobBegSub.py	~> sub: /GeoXpert/+/jobBegin
+	3) dataStoreGeomQry.py	~> pub: /GeoXpert/uname_xxx/jobFinish

@@ -1,0 +1,16 @@
+# routine steps:
+
+ftpJSserver.js
+	|				getToken = require("./nodeRunPy");	nodeRunPy.js
+	|
+	 /api/login
+	 	|						chk2Login.py
+	 	|		  doPyScriptRun(pyFileName, locate, tblName, userName, userPw, theRes)
+	 	 getToken.doPyScriptRun('chk2Login.py', './pyCoopUtils', 'users', res);
+
+
+nodeRunPy.js
+	|
+	|	const PythonShell = require('python-shell').PythonShell;
+	| 				args: [tblName, userName, userPw]
+	
